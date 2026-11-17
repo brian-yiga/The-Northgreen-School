@@ -90,3 +90,62 @@ export const MDS_CORNER_DATA = {
   ],
   image: 'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=900&q=80',
 };
+
+export const NOTICES_DATA = [
+  {
+    id: 'notice-1',
+    tag: 'Open Day Event',
+    date: 'Saturday, Dec 5, 2026 • 9:00 AM – 12:00 PM',
+    title: 'Early Years & Primary Campus Experience',
+    summary:
+      'Tour our green classrooms, meet our educators, and see how inquiry-based learning comes alive at The North Green School.',
+    ctaText: 'Register to Visit',
+    actionType: 'inquiry',
+  },
+  {
+    id: 'notice-2',
+    tag: 'Admissions Notice',
+    date: 'Term I 2027 Intake',
+    title: '2027 Admissions Now Open',
+    summary:
+      'Limited spaces available across Kindergarten and Primary levels. Submit an inquiry today to schedule a family walkthrough.',
+    ctaText: 'Explore Admissions',
+    actionType: 'link',
+    path: '/admissions',
+  },
+];
+
+export const COMMUNITY_SPOTLIGHTS = [
+  {
+    id: 1,
+    name: 'Amina & David',
+    role: 'Primary 5 Learners',
+    quote: 'Beyond what’s possible',
+    story: 'Leading our campus biodiversity mapping project and presenting findings at the termly learner showcase.',
+    image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 2,
+    name: 'Sarah Namukasa',
+    role: 'Lower Primary Lead Educator',
+    quote: 'Confidence to succeed',
+    story: 'Creating calm, responsive classrooms where every learner’s curiosity shapes the daily inquiry.',
+    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 3,
+    name: 'Joseph Kato',
+    role: 'Campus Grounds & Eco-Coordinator',
+    quote: 'Feeding curiosity',
+    story: 'Guiding learners as they cultivate organic vegetables from seed to harvest in our kitchen garden.',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 4,
+    name: 'Grace & Ethan',
+    role: 'Student Council Peacemakers',
+    quote: 'Creating new paths',
+    story: 'Championing peer mentorship, kindness initiatives, and welcoming new families to TNGS.',
+    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80',
+  },
+];
