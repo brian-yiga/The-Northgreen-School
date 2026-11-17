@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CheckCircle2, BookOpen, Calendar, Sparkles } from 'lucide-react';
 import { LEARNING_DATA } from '../data/mockTngsData';
+import PageHero from '../components/layout/PageHero';
 import {
   RevealOnScroll,
   StaggerContainer,
@@ -10,11 +11,13 @@ import {
   EDITORIAL_EASE,
 } from '../components/motion/MotionPrimitives';
 
+// Import local image
+import learningBg from '../assets/images/pages-hero-bg-images/learning-page.webp';
+
 export default function LearningPage({ onOpenInquiry }) {
   const [activeStageId, setActiveStageId] = useState(LEARNING_DATA.stages[0].id);
   const { hash } = useLocation();
 
-  // Sync active tab when navigating via Mega-Menu hash links (#early-years, #lower-primary, #upper-primary)
   useEffect(() => {
     const cleanHash = hash.replace('#', '');
     const matchedStage = LEARNING_DATA.stages.find((stage) => stage.id === cleanHash);
@@ -28,22 +31,16 @@ export default function LearningPage({ onOpenInquiry }) {
 
   return (
     <div className="bg-white">
-      {/* Page Hero Banner */}
-      <section className="bg-tngs-green text-white py-16 sm:py-24 px-4 sm:px-8">
-        <div className="max-w-7xl mx-auto">
-          <RevealOnScroll className="max-w-3xl">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-tngs-mint bg-white/10 px-3.5 py-1.5 rounded-full mb-4">
-              Learning at TNGS
-            </span>
-            <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              Story of a North Green Learner.
-            </h1>
-            <p className="mt-5 text-base sm:text-lg text-stone-200 leading-relaxed">
-              From joyful play in Early Years to confident leadership in Upper Primary, our curriculum balances academic excellence with curiosity and character.
-            </p>
-          </RevealOnScroll>
-        </div>
-      </section>
+      {/* Page Hero with Right-Aligned Faint Background & Gradient */}
+      <PageHero
+        eyebrow="Learning at TNGS"
+        title="Story of a North Green Learner."
+        description="From joyful play in Cambridge Early Years to confident IGCSE scholarship in Secondary, our curriculum balances international academic standards with curiosity and character."
+        bgImage={learningBg}
+      />
+
+      {/* Interactive Grade-Level Stage Switcher */}
+      ...
 
       {/* Interactive Grade-Level Stage Switcher */}
       <section

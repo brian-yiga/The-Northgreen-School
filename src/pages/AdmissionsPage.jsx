@@ -9,12 +9,16 @@ import {
   Clock,
 } from 'lucide-react';
 import { ADMISSIONS_DATA } from '../data/mockTngsData';
+import PageHero from '../components/layout/PageHero';
 import {
   RevealOnScroll,
   StaggerContainer,
   StaggerItem,
   EDITORIAL_EASE,
 } from '../components/motion/MotionPrimitives';
+
+// Import local image
+import admissionsBg from '../assets/images/pages-hero-bg-images/admissions-page.webp';
 
 export default function AdmissionsPage({ onOpenInquiry }) {
   const [openFaqIndex, setOpenFaqIndex] = useState(0);
@@ -25,30 +29,25 @@ export default function AdmissionsPage({ onOpenInquiry }) {
 
   return (
     <div className="bg-white">
-      {/* Page Hero Banner */}
-      <section className="bg-tngs-green text-white py-12 sm:py-16 px-4 sm:px-8">
-        <div className="max-w-7xl mx-auto">
-          <RevealOnScroll className="max-w-3xl">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-tngs-mint bg-white/10 px-3.5 py-1.5 rounded-full mb-4">
-              Admissions • 2026–2027
-            </span>
-            <h1 className="font-serif text-3xl sm:text-5xl font-bold leading-tight">
-              Begin your family’s journey at TNGS.
-            </h1>
-            <p className="mt-4 text-base sm:text-lg text-stone-100 leading-relaxed">
-              We make joining The North Green School warm, transparent, and personal—from your very first campus visit to your child’s first day in class.
-            </p>
-            <div className="mt-6 flex flex-col sm:flex-row gap-3">
-              <button
-                onClick={onOpenInquiry}
-                className="inline-flex items-center justify-center gap-2 bg-white text-tngs-green hover:bg-tngs-mint font-semibold text-sm px-6 py-3 rounded-full shadow transition-colors"
-              >
-                Start an Inquiry <ArrowRight size={16} />
-              </button>
-            </div>
-          </RevealOnScroll>
+      {/* Page Hero with Right-Aligned Faint Background & Gradient */}
+      <PageHero
+        eyebrow="Admissions • 2026–2027"
+        title="Begin your family’s journey at TNGS."
+        description="We make joining The North Green School warm, transparent, and personal—from your very first campus visit to your child’s first day in class."
+        bgImage={admissionsBg}
+      >
+        <div className="mt-6 flex flex-col sm:flex-row gap-3">
+          <button
+            onClick={onOpenInquiry}
+            className="inline-flex items-center justify-center gap-2 bg-white text-tngs-green hover:bg-tngs-mint font-semibold text-sm px-6 py-3 rounded-full shadow transition-colors"
+          >
+            Start an Inquiry <ArrowRight size={16} />
+          </button>
         </div>
-      </section>
+      </PageHero>
+
+      {/* Step-by-Step Admissions Process (#process) */}
+      ...
 
       {/* Step-by-Step Admissions Process (#process) */}
       <section id="process" className="scroll-mt-28 py-12 sm:py-12 px-4 sm:px-8 max-w-7xl mx-auto">

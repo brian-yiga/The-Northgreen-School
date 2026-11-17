@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, Clock, MapPin, HeartHandshake, ArrowRight } from 'lucide-react';
 import { COMMUNITY_DATA } from '../data/mockTngsData';
+import PageHero from '../components/layout/PageHero';
 import {
   RevealOnScroll,
   StaggerContainer,
@@ -8,25 +9,22 @@ import {
   EditorialImage,
 } from '../components/motion/MotionPrimitives';
 
+// Import local image
+import communityBg from '../assets/images/pages-hero-bg-images/community-page.webp';
+
 export default function CommunityPage({ onOpenInquiry }) {
   return (
     <div className="bg-white">
-      {/* Page Hero Banner */}
-      <section className="bg-tngs-green text-white py-12 sm:py-16 px-4 sm:px-8">
-        <div className="max-w-7xl mx-auto">
-          <RevealOnScroll className="max-w-3xl">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-tngs-mint bg-white/10 px-3.5 py-1.5 rounded-full mb-4">
-              The TNGS Village
-            </span>
-            <h1 className="font-serif text-3xl sm:text-5xl font-bold leading-tight">
-              Stories, families, and moments that connect us.
-            </h1>
-            <p className="mt-4 text-base sm:text-lg text-stone-100 leading-relaxed">
-              Discover daily life across our classrooms and gardens, learn about our Parents’ Association, and mark your calendar for upcoming school gatherings.
-            </p>
-          </RevealOnScroll>
-        </div>
-      </section>
+      {/* Page Hero with Right-Aligned Faint Background & Gradient */}
+      <PageHero
+        eyebrow="The TNGS Village"
+        title="Stories, families, and moments that connect us."
+        description="Discover daily life across our classrooms and gardens, learn about our Parents’ Association, and mark your calendar for upcoming school gatherings."
+        bgImage={communityBg}
+      />
+
+      {/* School Stories & News (#stories) */}
+      ...
 
       {/* School Stories & News (#stories) */}
       <section id="stories" className="scroll-mt-28 py-12 sm:py-12 px-4 sm:px-8 max-w-7xl mx-auto">

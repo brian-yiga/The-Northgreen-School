@@ -1,37 +1,34 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'; // <-- Make sure motion is imported here!
 import { Quote, Sparkles, Trees, HeartHandshake, ArrowRight } from 'lucide-react';
 import { DISCOVER_DATA, RESIDENT_DIRECTOR_DATA } from '../data/mockTngsData';
+import PageHero from '../components/layout/PageHero';
 import {
   RevealOnScroll,
   StaggerContainer,
   StaggerItem,
   EditorialImage,
-  EDITORIAL_EASE,
 } from '../components/motion/MotionPrimitives';
+
+// Import local image using correct assets path
+import discoverBg from '../assets/images/pages-hero-bg-images/discover-page.webp';
 
 const PRINCIPLE_ICONS = [Sparkles, Trees, HeartHandshake];
 
 export default function DiscoverPage({ onOpenInquiry }) {
   return (
     <div className="bg-white">
-      {/* Page Hero Banner */}
-      <section className="bg-tngs-green text-white py-16 sm:py-24 px-4 sm:px-8">
-        <div className="max-w-7xl mx-auto">
-          <RevealOnScroll className="max-w-3xl">
-            <span className="inline-block text-xs font-bold uppercase tracking-widest text-tngs-mint bg-white/10 px-3.5 py-1.5 rounded-full mb-4">
-              Discover The North Green School
-            </span>
-            <h1 className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold leading-tight">
-              A learning community rooted in nature and purpose.
-            </h1>
-            <p className="mt-5 text-base sm:text-lg text-stone-200 leading-relaxed">
-              Explore our educational vision, hear our Resident Director's Message, and discover the green spaces and educators shaping every child’s journey.
-            </p>
-          </RevealOnScroll>
-        </div>
-      </section>
+      {/* Page Hero with Subtle Right-Aligned Background Image & Gradient */}
+      <PageHero
+        eyebrow="Discover The North Green School"
+        title="A learning community rooted in nature and purpose."
+        description="Explore our educational vision, hear from our Managing Director, and discover the green spaces and educators shaping every child’s journey."
+        bgImage={discoverBg}
+      />
+      
+      {/* Rest of your DiscoverPage code... */}
 
+      
       {/* Section 1: Vision, Mission & Core Principles (#vision) */}
       <section id="vision" className="scroll-mt-28 py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto">
         <RevealOnScroll className="max-w-3xl mb-12">
@@ -86,7 +83,7 @@ export default function DiscoverPage({ onOpenInquiry }) {
                 whileInView={{ scale: 1, opacity: 1 }}
                 whileHover={{ scale: 1.02 }}
                 viewport={{ once: true, amount: 0.2 }}
-                transition={{ duration: 0.8, ease: EDITORIAL_EASE }}
+                // transition={{ duration: 0.8, ease: EDITORIAL_EASE }}
                 className="h-full w-full object-cover object-top"
               />
             </div>
