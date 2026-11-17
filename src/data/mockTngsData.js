@@ -1,3 +1,5 @@
+import heroBackgroundImage from '../assets/images/backgroundImage.jpeg';
+
 export const NAVIGATION_DATA = [
   {
     label: 'Discover',
@@ -50,7 +52,7 @@ export const HERO_DATA = {
   kineticWords: ['curiosity.', 'nature.', 'purpose.', 'community.'],
   subheadline:
     'A nurturing, student-centred school where young minds grow with confidence, compassion, and a deep respect for the world around them.',
-  image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1920&q=80',
+  image: heroBackgroundImage,
 };
 
 export const PILLARS_DATA = [

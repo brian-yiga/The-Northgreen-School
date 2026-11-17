@@ -1,10 +1,37 @@
 @import "tailwindcss";
 
 @theme {
-  --color-tngs-green: #1b4332;
+  --color-tngs-green: #009845;
   --color-tngs-lightGreen: #2d6a4f;
   --color-tngs-mint: #d8f3dc;
   --color-tngs-cream: #fbfb9f;
   --color-tngs-charcoal: #212529;
   --color-tngs-sand: #f4f1ea;
+
+  --font-sans: 'Open Sans', sans-serif;
+  --font-serif: 'Poppins', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --font-poppins: 'Poppins', sans-serif;
+  --font-open-sans: 'Open Sans', sans-serif;
+}
+
+@layer base {
+  body, p {
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6, button, [role="button"] {
+    font-family: var(--font-heading);
+  }
+}
+
+
+@layer base {
+  body, p {
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6, button, [role="button"] {
+    font-family: var(--font-heading);
+  }
 }

@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Menu, X, Phone, Mail, ArrowRight } from 'lucide-react';
 import { NAVIGATION_DATA } from '../../data/mockTngsData';
+import logoImage from '../../assets/images/TNGS - Landscape Logo.png';
 
 export default function Navbar({ onOpenInquiry }) {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const navigate = useNavigate();
 
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm">
@@ -45,18 +45,15 @@ export default function Navbar({ onOpenInquiry }) {
       {/* Main Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-8 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-xl bg-tngs-green flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:scale-105 transition-transform">
-            NG
-          </div>
-          <div>
-            <span className="block font-serif text-lg font-bold text-tngs-green tracking-tight">
-              The North Green School
-            </span>
-            <span className="block text-xs uppercase tracking-wider text-stone-500 font-sans">
-              Kampala, Uganda
-            </span>
-          </div>
+        <Link
+          to="/"
+          className="flex items-center bg-tngs-green px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl shadow-sm hover:brightness-105 transition-all group"
+        >
+          <img
+            src={logoImage}
+            alt="The North Green School"
+            className="h-8 sm:h-10 w-auto object-contain"
+          />
         </Link>
 
         {/* Desktop Navigation Links with Mega-Menu */}

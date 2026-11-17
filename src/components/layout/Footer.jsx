@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Globe, Share2 } from 'lucide-react';
 import { NAVIGATION_DATA } from '../../data/mockTngsData';
+import logoImage from '../../assets/images/TNGS - Landscape Logo.png';
 
 export default function Footer() {
   return (
@@ -11,14 +12,13 @@ export default function Footer() {
           
           {/* School Info */}
           <div className="lg:col-span-2 flex flex-col gap-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-white text-tngs-green flex items-center justify-center font-bold text-lg">
-                NG
-              </div>
-              <span className="font-serif text-xl font-bold tracking-tight">
-                The North Green School
-              </span>
-            </div>
+            <Link to="/" className="inline-block group">
+              <img
+                src={logoImage}
+                alt="The North Green School"
+                className="h-10 w-auto object-contain group-hover:opacity-90 transition-opacity"
+              />
+            </Link>
             <p className="text-stone-300 text-sm max-w-sm leading-relaxed">
               A caring, student-centred primary school in Kampala where learning begins with curiosity, nature, and community.
             </p>
