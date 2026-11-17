@@ -51,9 +51,10 @@ export default function LearningPage({ onOpenInquiry }) {
         className="scroll-mt-28 py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto"
       >
         {/* Anchor targets so #early-years, #lower-primary, #upper-primary scroll smoothly here */}
+        {/* Anchor targets so #early-years, #primary, #secondary scroll smoothly here */}
         <span id="early-years" className="scroll-mt-32" />
-        <span id="lower-primary" className="scroll-mt-32" />
-        <span id="upper-primary" className="scroll-mt-32" />
+        <span id="primary" className="scroll-mt-32" />
+        <span id="secondary" className="scroll-mt-32" />
 
         <RevealOnScroll className="mb-8">
           <span className="text-xs font-bold uppercase tracking-widest text-tngs-lightGreen">

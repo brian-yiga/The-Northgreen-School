@@ -9,7 +9,7 @@ export default function InquiryModal({ isOpen, onClose }) {
     parentName: '',
     phone: '',
     email: '',
-    gradeLevel: 'Early Years & Kindergarten',
+    gradeLevel: 'Cambridge Early Years',
     visitType: 'Private Campus Tour',
   });
 
@@ -109,14 +109,14 @@ export default function InquiryModal({ isOpen, onClose }) {
                       <label className="block text-xs font-semibold text-stone-700 mb-1">
                         Child’s Entry Level
                       </label>
-                      <select
+                     <select
                         value={formData.gradeLevel}
                         onChange={(e) => setFormData({ ...formData, gradeLevel: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl border border-stone-200 text-sm bg-white focus:outline-none focus:border-tngs-green"
                       >
-                        <option>Early Years & Kindergarten</option>
-                        <option>Lower Primary (P1 – P3)</option>
-                        <option>Upper Primary (P4 – P7)</option>
+                        <option>Cambridge Early Years</option>
+                        <option>Primary Section (Years 1 – 6)</option>
+                        <option>Secondary Section (Years 7 – 11)</option>
                       </select>
                     </div>
                     <div>

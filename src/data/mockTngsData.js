@@ -18,12 +18,12 @@ export const NAVIGATION_DATA = [
   {
     label: 'Learning',
     path: '/learning',
-    description: 'Student-centred inquiry from Early Years through Upper Primary.',
+    description: 'Cambridge International Pathway from Early Years through Secondary.',
     links: [
-      { title: 'Early Years & Kindergarten', path: '/learning#early-years', subtitle: 'Play-based curiosity & discovery' },
-      { title: 'Lower Primary (P1 – P3)', path: '/learning#lower-primary', subtitle: 'Building strong foundations' },
-      { title: 'Upper Primary (P4 – P7)', path: '/learning#upper-primary', subtitle: 'Critical thinking & leadership' },
-      { title: 'Co-Curriculars & Arts', path: '/learning#co-curriculars', subtitle: 'Sports, music, and environmental clubs' },
+      { title: 'Cambridge Early Years', path: '/learning#early-years', subtitle: 'Ages 3 – 5 • Play-based curiosity & discovery' },
+      { title: 'Cambridge Primary (Years 1 – 6)', path: '/learning#primary', subtitle: 'Ages 5 – 11 • Strong global foundations' },
+      { title: 'Cambridge Secondary (Years 7 – 11)', path: '/learning#secondary', subtitle: 'Ages 11 – 16 • Lower Secondary & IGCSE' },
+      { title: 'Akii Co-Curriculars', path: '/learning#co-curriculars', subtitle: 'Swimming, chess, football & rowing' },
     ],
   },
   {
@@ -117,7 +117,7 @@ export const NOTICES_DATA = [
     date: 'Term I 2027 Intake',
     title: '2027 Admissions Now Open',
     summary:
-      'Limited spaces available across Kindergarten and Primary levels. Submit an inquiry today to schedule a family walkthrough.',
+      'Limited spaces available across Cambridge Early Years, Primary (Years 1–6), and Secondary (Years 7–11). Submit an inquiry today to schedule a family walkthrough.',
     ctaText: 'Explore Admissions',
     actionType: 'link',
     path: '/admissions',
@@ -223,48 +223,48 @@ export const LEARNING_DATA = {
   stages: [
     {
       id: 'early-years',
-      label: 'Early Years & Kindergarten',
-      ages: 'Ages 3 – 5 • Baby, Middle & Top Class',
-      headline: 'Wonder-led discovery in a warm, nature-rich environment.',
+      label: 'Cambridge Early Years',
+      ages: 'Ages 3 – 5 • Early Years Foundation Stage',
+      headline: 'Wonder-led discovery in a warm, nature-rich Cambridge environment.',
       description:
-        'Our Early Years program nurtures social-emotional confidence, oral language, early numeracy, and sensory exploration through structured play and outdoor discovery.',
+        'Following the Cambridge Early Years framework, we nurture communication, early literacy, numeracy, physical development, and social-emotional confidence through guided play and outdoor exploration.',
       highlights: [
-        'Play-based phonics, storytelling, and early mathematical thinking',
-        'Daily outdoor nature walks, sand/water exploration, and sensory play',
-        'Low learner-to-educator ratios ensuring individualized care and warmth',
-        'Gentle routines that foster independence, sharing, and curiosity',
+        'Cambridge Early Years play-based phonics, storytelling, and early mathematical thinking',
+        'Daily outdoor nature walks, sensory exploration, and campus garden discovery',
+        'Low learner-to-educator ratios ensuring individualized warmth and care',
+        'Smooth, joyful progression into Cambridge Primary Year 1',
       ],
       image:
         'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1000&q=80',
     },
     {
-      id: 'lower-primary',
-      label: 'Lower Primary (P1 – P3)',
-      ages: 'Ages 6 – 8 • Primary 1 to Primary 3',
-      headline: 'Building strong literacy, numeracy, and joyful inquiry habits.',
+      id: 'primary',
+      label: 'Primary Section (Years 1 – 6)',
+      ages: 'Ages 5 – 11 • Cambridge Primary (Year 1 to Year 6)',
+      headline: 'Building strong international foundations in literacy, numeracy, and inquiry.',
       description:
-        'In Lower Primary, learners transition into structured thematic units where reading, mathematics, science, and creative expression connect to real-world questions.',
+        'Across Years 1 to 6, learners follow the Cambridge Primary curriculum—connecting English, Mathematics, Science, Global Perspectives, and Digital Literacy to real-world questions.',
       highlights: [
-        'Strong foundational fluency in reading, writing, and conceptual mathematics',
-        'Hands-on science investigations in our campus garden and outdoor labs',
-        'Small-group guided reading and personalized learning check-ins',
-        'Collaborative classroom projects that build communication and empathy',
+        'Structured progression in Cambridge English, Mathematics, and Integrated Science',
+        'Cambridge Global Perspectives projects that nurture critical thinking and teamwork',
+        'Hands-on ecological investigations in our campus gardens and outdoor labs',
+        'Cambridge Primary Checkpoint assessments in Year 6 to benchmark readiness for Secondary',
       ],
       image:
         'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80',
     },
     {
-      id: 'upper-primary',
-      label: 'Upper Primary (P4 – P7)',
-      ages: 'Ages 9 – 12 • Primary 4 to Primary 7',
-      headline: 'Critical thinking, leadership, and readiness for secondary excellence.',
+      id: 'secondary',
+      label: 'Secondary Section (Years 7 – 11)',
+      ages: 'Ages 11 – 16 • Cambridge Lower Secondary & IGCSE',
+      headline: 'Independent scholarship, leadership, and globally recognized IGCSE pathways.',
       description:
-        'Upper Primary challenges learners to synthesize knowledge, lead community initiatives, and master national and international academic benchmarks with confidence.',
+        'Our Secondary Section guides students through Cambridge Lower Secondary (Years 7–9) and Cambridge IGCSE (Years 10–11), equipping young leaders with analytical depth and global university readiness.',
       highlights: [
-        'Rigorous preparation in Mathematics, English, Integrated Science, and Social Studies',
-        'Student-led capstone research projects and public speaking showcases',
-        'Digital literacy, coding fundamentals, and environmental stewardship',
-        'Peer mentorship roles through our Student Council and House system',
+        'Broad Cambridge Lower Secondary subjects (Years 7–9) culminating in Year 9 Checkpoint',
+        'Tailored Cambridge IGCSE subject pathways (Years 10–11) across Sciences, Humanities, and Languages',
+        'Applied STEM, coding, research seminars, and public speaking showcases',
+        'Student leadership, community service, and holistic mentorship',
       ],
       image:
         'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=80',
@@ -380,7 +380,7 @@ export const ADMISSIONS_DATA = {
     {
       question: 'What documents are required when applying?',
       answer:
-        'You will need a copy of your child’s birth certificate, immunization card, two passport-size photographs, and the most recent school report (for Primary 1 to Primary 6 applicants).',
+        'You will need a copy of your child’s birth certificate, immunization card, two passport-size photographs, and the most recent school report (for Primary Year 1 through Secondary applicants).',
     },
   ],
   keyDates: [

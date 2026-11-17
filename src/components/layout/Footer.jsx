@@ -20,7 +20,7 @@ export default function Footer() {
               />
             </Link>
             <p className="text-stone-300 text-sm max-w-sm leading-relaxed">
-              A caring, student-centred primary school in Kampala where learning begins with curiosity, nature, and community.
+              A caring, student-centred Cambridge International school in Kampala where learning begins with curiosity, nature, and community.
             </p>
             <div className="flex items-center gap-3 pt-2">
               <a href="#" className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors" aria-label="Website">
