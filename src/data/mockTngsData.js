@@ -149,3 +149,63 @@ export const COMMUNITY_SPOTLIGHTS = [
     image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80',
   },
 ];
+
+export const DISCOVER_DATA = {
+  vision: {
+    eyebrow: 'Vision & Mission',
+    title: 'Nurturing curious minds and compassionate citizens.',
+    mission:
+      'To provide an inspiring, student-centred education rooted in inquiry, environmental stewardship, and strong moral values—equipping every learner in Uganda to thrive with confidence and purpose.',
+    principles: [
+      {
+        title: 'Child-Centred Curiosity',
+        description: 'We meet each learner where they are, turning natural questions into deep, joyful understanding.',
+      },
+      {
+        title: 'Rooted in Nature',
+        description: 'Daily outdoor exploration fosters responsibility, resilience, and care for our shared environment.',
+      },
+      {
+        title: 'Character & Community',
+        description: 'Kindness, integrity, and mutual respect guide how students, teachers, and families interact every day.',
+      },
+    ],
+  },
+  campusSpaces: [
+    {
+      title: 'Bright, Open Classrooms',
+      description: 'Naturally ventilated learning studios designed for collaboration, reading, and hands-on discovery.',
+      image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80',
+    },
+    {
+      title: 'The Kitchen & Eco-Garden',
+      description: 'An outdoor living laboratory where learners plant, harvest, and study ecology firsthand.',
+      image: 'https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=900&q=80',
+    },
+    {
+      title: 'Creative Arts & Play Grounds',
+      description: 'Safe, green outdoor fields and dedicated studios for music, visual arts, and physical education.',
+      image: 'https://images.unsplash.com/photo-1564429238817-39f8928f7b78?auto=format&fit=crop&w=900&q=80',
+    },
+  ],
+  leadership: [
+    {
+      name: 'Grace Nakato',
+      role: 'Head of Academics',
+      bio: '14+ years leading primary curriculum innovation and inquiry-based teacher mentorship.',
+      image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80',
+    },
+    {
+      name: 'David Ssemwogerere',
+      role: 'Dean of Student Life & Co-Curriculars',
+      bio: 'Passionate about athletics, student leadership, and holistic social-emotional growth.',
+      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80',
+    },
+    {
+      name: 'Rebecca Namuli',
+      role: 'Early Years Coordinator',
+      bio: 'Specialist in foundational literacy, play-based learning, and smooth Kindergarten transitions.',
+      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80',
+    },
+  ],
+};

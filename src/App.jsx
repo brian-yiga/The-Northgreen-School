@@ -2,19 +2,23 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+import ScrollToHash from './components/layout/ScrollToHash';
 import HomePage from './pages/HomePage';
+import DiscoverPage from './pages/DiscoverPage';
 
 export default function App() {
   const [inquiryModalOpen, setInquiryModalOpen] = useState(false);
 
   return (
     <Router>
+      <ScrollToHash />
       <div className="min-h-screen flex flex-col bg-white text-tngs-charcoal font-sans selection:bg-tngs-mint selection:text-tngs-green">
         <Navbar onOpenInquiry={() => setInquiryModalOpen(true)} />
 
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<HomePage onOpenInquiry={() => setInquiryModalOpen(true)} />} />
+            <Route path="/discover" element={<DiscoverPage onOpenInquiry={() => setInquiryModalOpen(true)} />} />
             <Route path="*" element={<HomePage onOpenInquiry={() => setInquiryModalOpen(true)} />} />
           </Routes>
         </main>
