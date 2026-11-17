@@ -272,36 +272,64 @@ export const LEARNING_DATA = {
   ],
   coCurriculars: [
     {
-      title: 'Eco-Club & Permaculture',
-      category: 'Sustainability',
+      id: 'aqua-akii',
+      title: 'Aqua Akii',
+      category: 'Swimming Club',
+      featured: true,
       description:
-        'Learners tend organic vegetable beds, compost campus waste, and lead tree-planting drives across Kampala.',
+        'Our flagship aquatic program building water confidence, stroke technique, endurance, and competitive swimming readiness under certified swim coaches.',
+      highlight: 'Off-site pool training, gala preparation & water safety',
       image:
-        'https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=900&q=80',
+      socials: {
+        instagram: 'https://instagram.com',
+        tiktok: 'https://tiktok.com',
+      },
     },
     {
-      title: 'Music, Dance & Drama',
-      category: 'Creative Arts',
+      id: 'mind-akii',
+      title: 'MindAkii',
+      category: 'Chess Club',
+      featured: false,
       description:
-        'From traditional Ugandan percussion and choir to creative theatre productions that build stage confidence.',
+        'Sharpening focus, pattern recognition, patience, and strategic foresight through structured chess coaching, peer matches, and inter-school tournaments.',
+      highlight: 'Weekly tactical workshops & competitive tournament play',
       image:
-        'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=900&q=80',
+      socials: {
+        instagram: 'https://instagram.com',
+        tiktok: 'https://tiktok.com',
+      },
     },
     {
-      title: 'Athletics & Team Sports',
-      category: 'Physical Wellness',
+      id: 'akii-bua-sports',
+      title: 'Akii Bua Sports Programme & Surge Cup',
+      category: 'Football & Athletics',
+      featured: false,
       description:
-        'Football, athletics, swimming, and cooperative movement games emphasizing teamwork and sportsmanship.',
+        'Developing agility, teamwork, discipline, and game intelligence on the pitch—culminating in spirited participation in the Surge Cup football showcase.',
+      highlight: 'Skill drills, Surge Cup match days & sportsmanship',
       image:
-        'https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=900&q=80',
+      socials: {
+        instagram: 'https://instagram.com',
+        tiktok: 'https://tiktok.com',
+      },
     },
     {
-      title: 'Coding, Robotics & Chess',
-      category: 'STEM & Strategy',
+      id: 'akii-rowing',
+      title: 'Akii Rowing Club',
+      category: 'Rowing & Water Endurance',
+      featured: false,
       description:
-        'Logic puzzles, beginner block coding, and strategic thinking clubs that sharpen problem-solving skills.',
+        'Introducing young learners to balance, core strength, synchronized teamwork, and respect for Uganda’s waterways through guided rowing sessions.',
+      highlight: 'Off-site water sessions, balance & team coordination',
       image:
-        'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80',
+        'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80',
+      socials: {
+        instagram: 'https://instagram.com',
+        tiktok: 'https://tiktok.com',
+      },
     },
   ],
 };

@@ -147,46 +147,103 @@ export default function LearningPage({ onOpenInquiry }) {
       </section>
 
       {/* Co-Curriculars & Enrichment (#co-curriculars) */}
+      {/* Co-Curriculars & Enrichment (#co-curriculars) */}
       <section
         id="co-curriculars"
-        className="scroll-mt-28 py-16 sm:py-24 bg-tngs-mint/20 border-t border-stone-200/70 px-4 sm:px-8"
+        className="scroll-mt-28 py-12 sm:py-8 bg-tngs-mint/20 border-t border-stone-200/70 px-4 sm:px-8"
       >
         <div className="max-w-7xl mx-auto">
-          <RevealOnScroll className="max-w-2xl mb-12">
+          <RevealOnScroll className="max-w-2xl mb-8">
             <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-tngs-lightGreen">
               <Sparkles size={14} /> Beyond the Classroom
             </span>
             <h2 className="mt-2 font-serif text-3xl sm:text-4xl font-bold text-tngs-green">
-              Co-Curriculars & Arts
+              Akii Co-Curricular Programmes
             </h2>
             <p className="mt-3 text-base text-stone-600 leading-relaxed">
-              Every learner discovers new passions through weekly clubs, creative arts, athletics, and environmental stewardship.
+              Our signature clubs build resilience, strategy, and teamwork—both on campus and at specialized off-site training venues. Follow each programme on Instagram and TikTok for photos and match highlights.
             </p>
           </RevealOnScroll>
 
-          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
             {LEARNING_DATA.coCurriculars.map((club) => (
               <StaggerItem
-                key={club.title}
-                className="bg-white rounded-3xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-md transition-shadow flex flex-col"
+                key={club.id}
+                className="bg-white rounded-3xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-lg transition-shadow flex flex-col"
               >
-                <div className="aspect-[4/3] overflow-hidden bg-stone-200">
+                <div className="relative aspect-[16/10] overflow-hidden bg-stone-200">
                   <img
                     src={club.image}
                     alt={club.title}
                     className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
                   />
+                  <div className="absolute top-4 left-4 flex flex-wrap gap-2">
+                    <span className="bg-tngs-green text-white text-xs font-semibold px-3 py-1 rounded-full shadow">
+                      {club.category}
+                    </span>
+                    {club.featured && (
+                      <span className="bg-tngs-mint text-tngs-green text-xs font-bold px-3 py-1 rounded-full shadow">
+                        Flagship Aquatic Club
+                      </span>
+                    )}
+                  </div>
                 </div>
-                <div className="p-6 flex-grow flex flex-col">
-                  <span className="text-xs font-bold uppercase tracking-wider text-tngs-lightGreen">
-                    {club.category}
-                  </span>
-                  <h3 className="mt-1.5 font-serif text-xl font-bold text-tngs-charcoal">
-                    {club.title}
-                  </h3>
-                  <p className="mt-2.5 text-sm text-stone-600 leading-relaxed">
-                    {club.description}
-                  </p>
+
+                <div className="p-6 sm:p-8 flex-grow flex flex-col justify-between">
+                  <div>
+                    <h3 className="font-serif text-xl sm:text-2xl font-bold text-tngs-charcoal">
+                      {club.title}
+                    </h3>
+                    <p className="mt-2.5 text-sm sm:text-base text-stone-600 leading-relaxed">
+                      {club.description}
+                    </p>
+                    {club.highlight && (
+                      <p className="mt-3 text-xs font-semibold text-tngs-lightGreen bg-tngs-mint/40 inline-block px-3 py-1.5 rounded-lg">
+                        {club.highlight}
+                      </p>
+                    )}
+                  </div>
+
+                  {/* Social Links for Photos & Videos */}
+                  {club.socials && (
+                    <div className="mt-6 pt-4 border-t border-stone-100 flex flex-wrap items-center justify-between gap-3">
+                      <span className="text-xs font-semibold uppercase tracking-wider text-stone-400">
+                        Watch Clips & Photos:
+                      </span>
+                      <div className="flex items-center gap-2.5">
+                        {club.socials.instagram && (
+                          <a
+                            href={club.socials.instagram}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 rounded-full bg-tngs-sand text-tngs-charcoal hover:bg-tngs-green hover:text-white transition-colors"
+                          >
+                            {/* Clean Instagram SVG */}
+                            <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                              <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                              <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg>
+                            Instagram
+                          </a>
+                        )}
+                        {club.socials.tiktok && (
+                          <a
+                            href={club.socials.tiktok}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-xs font-semibold px-3.5 py-2 rounded-full bg-tngs-sand text-tngs-charcoal hover:bg-tngs-green hover:text-white transition-colors"
+                          >
+                            {/* Clean TikTok SVG */}
+                            <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                              <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
+                            </svg>
+                            TikTok
+                          </a>
+                        )}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </StaggerItem>
             ))}
