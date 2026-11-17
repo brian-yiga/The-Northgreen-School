@@ -19,7 +19,7 @@ export default function VillageCarousel({ onOpenInquiry }) {
   return (
     <>
       {/* "We are the village!" Horizontal Spotlight Carousel */}
-      <section className="py-16 sm:py-24 bg-tngs-sand/80 border-y border-stone-200/70">
+      <section className="py-8 sm:py-16 bg-tngs-sand/80 border-y border-stone-200/70">
         <div className="max-w-7xl mx-auto px-4 sm:px-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10">
             <RevealOnScroll className="max-w-2xl">
@@ -89,7 +89,7 @@ export default function VillageCarousel({ onOpenInquiry }) {
       </section>
 
       {/* Montcrest-Style Closing Action Banner */}
-      <section className="py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto">
+      <section className="py-8 sm:py-16 px-4 sm:px-8 max-w-7xl mx-auto">
         <RevealOnScroll className="bg-tngs-green rounded-3xl p-8 sm:p-14 text-center text-white relative overflow-hidden shadow-xl">
           <div className="relative z-10 max-w-2xl mx-auto">
             <span className="text-xs font-bold uppercase tracking-widest text-tngs-mint">

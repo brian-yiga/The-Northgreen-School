@@ -17,20 +17,31 @@ export default function HeroSection({ onOpenInquiry }) {
 
   return (
     <section className="relative min-h-[85vh] sm:min-h-[88vh] flex items-end sm:items-center overflow-hidden bg-tngs-green">
-      {/* Background Image with Slow Ken Burns Zoom */}
+      {/* Layered Background with Slow Ken Burns Zoom */}
       <motion.div
         initial={{ scale: 1.12 }}
         animate={{ scale: 1.02 }}
         transition={{ duration: 14, ease: 'easeOut', repeat: Infinity, repeatType: 'reverse' }}
         className="absolute inset-0 z-0"
       >
+        {/* Base Layer: High-res Graduation Image */}
+        {HERO_DATA.graduationImage && (
+          <img
+            src={HERO_DATA.graduationImage}
+            alt="Graduates at The North Green School"
+            className="absolute inset-0 h-full w-full object-cover object-center lg:object-[center_25%]"
+          />
+        )}
+
+        {/* Top Layer: Semi-transparent Campus Background Image */}
         <img
           src={HERO_DATA.image}
           alt="Learners at The North Green School"
-          className="h-full w-full object-cover object-center"
+          className="absolute inset-0 h-full w-full object-cover object-center opacity-35"
         />
+
         {/* Mobile-first gradient overlay for high text contrast */}
-        <div className="absolute inset-0 bg-gradient-to-t from-tngs-green/95 via-tngs-green/65 to-tngs-green/30 sm:bg-gradient-to-r sm:from-tngs-green/95 sm:via-tngs-green/70 sm:to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-tngs-green/95 via-tngs-green/65 to-tngs-green/20 sm:bg-gradient-to-r sm:from-tngs-green/95 sm:via-tngs-green/60 sm:to-transparent" />
       </motion.div>
 
       {/* Hero Foreground Content */}

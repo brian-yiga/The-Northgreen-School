@@ -7,7 +7,7 @@ import { RevealOnScroll, StaggerContainer, StaggerItem, EDITORIAL_EASE } from '.
 
 export default function PillarsSection() {
   return (
-    <section className="py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto">
+    <section className="py-12 sm:py-16 px-4 sm:px-8 max-w-7xl mx-auto">
       {/* Editorial Narrative Intro */}
       <RevealOnScroll className="max-w-3xl mb-12 sm:mb-16">
         <span className="text-xs font-bold uppercase tracking-widest text-tngs-lightGreen">

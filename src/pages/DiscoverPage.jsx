@@ -1,11 +1,13 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import { Quote, Sparkles, Trees, HeartHandshake, ArrowRight } from 'lucide-react';
-import { DISCOVER_DATA, MDS_CORNER_DATA } from '../data/mockTngsData';
+import { DISCOVER_DATA, RESIDENT_DIRECTOR_DATA } from '../data/mockTngsData';
 import {
   RevealOnScroll,
   StaggerContainer,
   StaggerItem,
   EditorialImage,
+  EDITORIAL_EASE,
 } from '../components/motion/MotionPrimitives';
 
 const PRINCIPLE_ICONS = [Sparkles, Trees, HeartHandshake];
@@ -24,7 +26,7 @@ export default function DiscoverPage({ onOpenInquiry }) {
               A learning community rooted in nature and purpose.
             </h1>
             <p className="mt-5 text-base sm:text-lg text-stone-200 leading-relaxed">
-              Explore our educational vision, hear from our Managing Director, and discover the green spaces and educators shaping every child’s journey.
+              Explore our educational vision, hear our Resident Director's Message, and discover the green spaces and educators shaping every child’s journey.
             </p>
           </RevealOnScroll>
         </div>
@@ -67,51 +69,58 @@ export default function DiscoverPage({ onOpenInquiry }) {
         </StaggerContainer>
       </section>
 
-      {/* Section 2: MD's Corner (#mds-corner) */}
+      {/* Section 2: Resident Director's Message (#resident-director) */}
       <section
-        id="mds-corner"
-        className="scroll-mt-28 py-16 sm:py-24 bg-tngs-mint/25 border-y border-stone-200/70 px-4 sm:px-8"
+        id="resident-director"
+        className="scroll-mt-28 py-10 sm:py-14 bg-tngs-mint/25 border-y border-stone-200/70 px-4 sm:px-8"
       >
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <span id="mds-corner" className="sr-only" />
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Portrait Column */}
-          <RevealOnScroll className="lg:col-span-5">
-            <EditorialImage
-              src={MDS_CORNER_DATA.image}
-              alt={MDS_CORNER_DATA.sectionTitle}
-              aspectClass="aspect-[4/4] sm:aspect-[4/3] lg:aspect-[4/5]"
-              className="shadow-xl"
-            />
+          <RevealOnScroll className="lg:col-span-5 flex justify-center">
+            <div className="w-full max-w-[320px] sm:max-w-[340px] lg:max-w-[360px] overflow-hidden rounded-2xl bg-stone-100 border border-stone-200/80 shadow-md aspect-[4/5] flex items-end justify-center">
+              <motion.img
+                src={RESIDENT_DIRECTOR_DATA.image}
+                alt={`${RESIDENT_DIRECTOR_DATA.name} - ${RESIDENT_DIRECTOR_DATA.role}`}
+                initial={{ scale: 1.04, opacity: 0.9 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                whileHover={{ scale: 1.02 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.8, ease: EDITORIAL_EASE }}
+                className="h-full w-full object-cover object-top"
+              />
+            </div>
           </RevealOnScroll>
 
           {/* Editorial Letter Column */}
           <RevealOnScroll delay={0.15} className="lg:col-span-7">
-            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-tngs-green bg-white px-3.5 py-1.5 rounded-full shadow-sm mb-4">
+            <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-tngs-green bg-white px-3.5 py-1.5 rounded-full shadow-sm mb-3">
               <Quote size={14} className="text-tngs-lightGreen" />
-              {MDS_CORNER_DATA.sectionTitle}
+              {RESIDENT_DIRECTOR_DATA.sectionTitle}
             </div>
 
-            <h2 className="font-serif text-2xl sm:text-4xl font-bold text-tngs-green leading-snug">
-              “{MDS_CORNER_DATA.headline}”
+            <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-tngs-green leading-snug">
+              “{RESIDENT_DIRECTOR_DATA.headline}”
             </h2>
 
-            <div className="mt-6 space-y-4 text-base text-stone-700 leading-relaxed">
-              {MDS_CORNER_DATA.message.map((paragraph, index) => (
+            <div className="mt-4 space-y-3 text-sm sm:text-base text-stone-700 leading-relaxed">
+              {RESIDENT_DIRECTOR_DATA.message.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
             </div>
 
-            <div className="mt-8 pt-6 border-t border-tngs-green/15 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+            <div className="mt-6 pt-4 border-t border-tngs-green/15 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
               <div>
                 <p className="font-serif text-lg font-bold text-tngs-charcoal">
-                  {MDS_CORNER_DATA.name}
+                  {RESIDENT_DIRECTOR_DATA.name}
                 </p>
                 <p className="text-xs sm:text-sm text-stone-500">
-                  The North Green School • Kampala
+                  {RESIDENT_DIRECTOR_DATA.role} • The North Green School
                 </p>
               </div>
               <button
                 onClick={onOpenInquiry}
-                className="inline-flex items-center justify-center gap-2 bg-tngs-green hover:bg-tngs-lightGreen text-white text-sm font-semibold px-6 py-3 rounded-full transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-tngs-green hover:bg-tngs-lightGreen text-white text-sm font-semibold px-6 py-2.5 rounded-full transition-colors"
               >
                 Meet Our Team <ArrowRight size={16} />
               </button>

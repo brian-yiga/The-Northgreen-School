@@ -1,4 +1,7 @@
 import heroBackgroundImage from '../assets/images/backgroundImage.jpeg';
+import graduationImage from '../assets/images/graduation.webp';
+import residentDirectorImage from '../assets/images/elaine-alowo-matovu.png';
+
 
 export const NAVIGATION_DATA = [
   {
@@ -7,7 +10,7 @@ export const NAVIGATION_DATA = [
     description: 'Rooted in nature, excellence, and holistic growth in Uganda.',
     links: [
       { title: 'Vision & Mission', path: '/discover#vision', subtitle: 'Our core educational philosophy' },
-      { title: "MD's Corner", path: '/discover#mds-corner', subtitle: 'A message from our Managing Director' },
+      { title: "Resident Director's Message", path: '/discover#resident-director', subtitle: 'A message from our Resident Director' },
       { title: 'Our Green Campus', path: '/discover#campus', subtitle: 'Eco-friendly learning spaces' },
       { title: 'Leadership & Faculty', path: '/discover#faculty', subtitle: 'Meet our dedicated educators' },
     ],
@@ -49,10 +52,11 @@ export const NAVIGATION_DATA = [
 export const HERO_DATA = {
   eyebrow: 'The North Green School • Kampala, Uganda',
   headlinePrefix: 'At TNGS, learning begins with',
-  kineticWords: ['curiosity.', 'nature.', 'purpose.', 'community.'],
+  kineticWords: ['curiosity.', 'nature.', 'purpose.', 'love.'],
   subheadline:
     'A nurturing, student-centred school where young minds grow with confidence, compassion, and a deep respect for the world around them.',
   image: heroBackgroundImage,
+  graduationImage: graduationImage,
 };
 
 export const PILLARS_DATA = [
@@ -82,16 +86,19 @@ export const PILLARS_DATA = [
   },
 ];
 
-export const MDS_CORNER_DATA = {
-  sectionTitle: "MD's Corner",
-  name: 'Managing Director',
+export const RESIDENT_DIRECTOR_DATA = {
+  sectionTitle: "Resident Director's Message",
+  name: 'Elaine Alowo-Matovu',
+  role: 'Resident Director',
   headline: 'Building a school where children love to learn and grow with integrity.',
   message: [
     'Welcome to The North Green School. When we envisioned TNGS, we wanted to create more than a place of academic instruction—we set out to build a living, breathing learning community rooted in nature, empathy, and intellectual curiosity.',
     'In a rapidly changing world, our children need both strong foundational skills and the resilience to think creatively. Here, every learner is seen, heard, and guided to discover their unique strengths.',
   ],
-  image: 'https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&fit=crop&w=900&q=80',
+  image: residentDirectorImage,
 };
+
+export const MDS_CORNER_DATA = RESIDENT_DIRECTOR_DATA;
 
 export const NOTICES_DATA = [
   {

@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown, Menu, X, Phone, Mail, ArrowRight } from 'lucide-react';
 import { NAVIGATION_DATA } from '../../data/mockTngsData';
 import logoImage from '../../assets/images/TNGS - Landscape Logo.png';
+import navBarBg from '../../assets/images/navBar-bg.png';
 
 export default function Navbar({ onOpenInquiry }) {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -12,8 +13,14 @@ export default function Navbar({ onOpenInquiry }) {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-stone-200 shadow-sm">
       {/* Top Utility Action Bar */}
-      <div className="bg-tngs-green text-white text-xs py-2 px-4 sm:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div className="relative bg-tngs-green text-white text-xs py-2 px-4 sm:px-8 overflow-hidden shadow-inner">
+        <img
+          src={navBarBg}
+          alt=""
+          aria-hidden="true"
+          className="absolute inset-0 w-full h-full object-cover object-center pointer-events-none select-none opacity-90"
+        />
+        <div className="relative z-10 max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
           <div className="flex items-center gap-6">
             <a href="tel:+256000000000" className="flex items-center gap-1.5 hover:text-tngs-mint transition-colors">
               <Phone size={13} />
@@ -28,15 +35,12 @@ export default function Navbar({ onOpenInquiry }) {
           <div className="flex items-center gap-3 font-medium">
             <button 
               onClick={onOpenInquiry}
-              className="bg-white/10 hover:bg-white/20 px-3 py-1 rounded-full transition-all"
+              className="bg-white/15 hover:bg-white/25 border border-white/25 backdrop-blur-xs px-3.5 py-1 rounded-full transition-all shadow-xs"
             >
               Inquire
             </button>
-            <Link to="/admissions#process" className="bg-white/10 hover:bg-white/20 px-3 py-1 rounded-full transition-all">
+            <Link to="/admissions#process" className="bg-white/15 hover:bg-white/25 border border-white/25 backdrop-blur-xs px-3.5 py-1 rounded-full transition-all shadow-xs">
               Apply
-            </Link>
-            <Link to="/discover#mds-corner" className="text-tngs-mint hover:underline font-semibold flex items-center gap-1">
-              MD's Corner <ArrowRight size={12} />
             </Link>
           </div>
         </div>
