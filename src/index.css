@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --color-tngs-green: #1b4332;
+  --color-tngs-lightGreen: #2d6a4f;
+  --color-tngs-mint: #d8f3dc;
+  --color-tngs-cream: #fbfb9f;
+  --color-tngs-charcoal: #212529;
+  --color-tngs-sand: #f4f1ea;
+}
