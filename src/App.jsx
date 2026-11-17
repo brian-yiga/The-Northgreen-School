@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer';
 import ScrollToHash from './components/layout/ScrollToHash';
 import HomePage from './pages/HomePage';
 import DiscoverPage from './pages/DiscoverPage';
+import LearningPage from './pages/LearningPage';
 
 export default function App() {
   const [inquiryModalOpen, setInquiryModalOpen] = useState(false);
@@ -19,6 +20,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<HomePage onOpenInquiry={() => setInquiryModalOpen(true)} />} />
             <Route path="/discover" element={<DiscoverPage onOpenInquiry={() => setInquiryModalOpen(true)} />} />
+            <Route path="/learning" element={<LearningPage onOpenInquiry={() => setInquiryModalOpen(true)} />} />
             <Route path="*" element={<HomePage onOpenInquiry={() => setInquiryModalOpen(true)} />} />
           </Routes>
         </main>

@@ -209,3 +209,90 @@ export const DISCOVER_DATA = {
     },
   ],
 };
+
+export const LEARNING_DATA = {
+  stages: [
+    {
+      id: 'early-years',
+      label: 'Early Years & Kindergarten',
+      ages: 'Ages 3 – 5 • Baby, Middle & Top Class',
+      headline: 'Wonder-led discovery in a warm, nature-rich environment.',
+      description:
+        'Our Early Years program nurtures social-emotional confidence, oral language, early numeracy, and sensory exploration through structured play and outdoor discovery.',
+      highlights: [
+        'Play-based phonics, storytelling, and early mathematical thinking',
+        'Daily outdoor nature walks, sand/water exploration, and sensory play',
+        'Low learner-to-educator ratios ensuring individualized care and warmth',
+        'Gentle routines that foster independence, sharing, and curiosity',
+      ],
+      image:
+        'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1000&q=80',
+    },
+    {
+      id: 'lower-primary',
+      label: 'Lower Primary (P1 – P3)',
+      ages: 'Ages 6 – 8 • Primary 1 to Primary 3',
+      headline: 'Building strong literacy, numeracy, and joyful inquiry habits.',
+      description:
+        'In Lower Primary, learners transition into structured thematic units where reading, mathematics, science, and creative expression connect to real-world questions.',
+      highlights: [
+        'Strong foundational fluency in reading, writing, and conceptual mathematics',
+        'Hands-on science investigations in our campus garden and outdoor labs',
+        'Small-group guided reading and personalized learning check-ins',
+        'Collaborative classroom projects that build communication and empathy',
+      ],
+      image:
+        'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80',
+    },
+    {
+      id: 'upper-primary',
+      label: 'Upper Primary (P4 – P7)',
+      ages: 'Ages 9 – 12 • Primary 4 to Primary 7',
+      headline: 'Critical thinking, leadership, and readiness for secondary excellence.',
+      description:
+        'Upper Primary challenges learners to synthesize knowledge, lead community initiatives, and master national and international academic benchmarks with confidence.',
+      highlights: [
+        'Rigorous preparation in Mathematics, English, Integrated Science, and Social Studies',
+        'Student-led capstone research projects and public speaking showcases',
+        'Digital literacy, coding fundamentals, and environmental stewardship',
+        'Peer mentorship roles through our Student Council and House system',
+      ],
+      image:
+        'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=80',
+    },
+  ],
+  coCurriculars: [
+    {
+      title: 'Eco-Club & Permaculture',
+      category: 'Sustainability',
+      description:
+        'Learners tend organic vegetable beds, compost campus waste, and lead tree-planting drives across Kampala.',
+      image:
+        'https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=800&q=80',
+    },
+    {
+      title: 'Music, Dance & Drama',
+      category: 'Creative Arts',
+      description:
+        'From traditional Ugandan percussion and choir to creative theatre productions that build stage confidence.',
+      image:
+        'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=800&q=80',
+    },
+    {
+      title: 'Athletics & Team Sports',
+      category: 'Physical Wellness',
+      description:
+        'Football, athletics, swimming, and cooperative movement games emphasizing teamwork and sportsmanship.',
+      image:
+        'https://images.unsplash.com/photo-1526676037777-05a232554f77?auto=format&fit=crop&w=800&q=80',
+    },
+    {
+      title: 'Coding, Robotics & Chess',
+      category: 'STEM & Strategy',
+      description:
+        'Logic puzzles, beginner block coding, and strategic thinking clubs that sharpen problem-solving skills.',
+      image:
+        'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80',
+    },
+  ],
+};
