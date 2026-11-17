@@ -305,3 +305,128 @@ export const LEARNING_DATA = {
     },
   ],
 };
+
+export const ADMISSIONS_DATA = {
+  steps: [
+    {
+      step: '01',
+      title: 'Submit an Online Inquiry',
+      description:
+        'Share a few details about your child and preferred entry term so our Admissions Office can connect with you.',
+    },
+    {
+      step: '02',
+      title: 'Family Campus Tour',
+      description:
+        'Walk our green classrooms, meet our educators, and experience TNGS learning in action with your child.',
+    },
+    {
+      step: '03',
+      title: 'Application & Learner Play/Assessment Session',
+      description:
+        'Complete the application form and join a relaxed, friendly readiness session tailored to your child’s age.',
+    },
+    {
+      step: '04',
+      title: 'Offer & Welcome to the Village',
+      description:
+        'Receive your admission offer, complete enrollment, and attend our New Family Orientation before Term starts.',
+    },
+  ],
+  tuitionFaqs: [
+    {
+      question: 'What does termly tuition cover at The North Green School?',
+      answer:
+        'Termly tuition includes core academic instruction, outdoor eco-lab sessions, library access, foundational learning materials, and weekly school-based co-curricular clubs. Optional transport and aftercare packages are billed separately.',
+    },
+    {
+      question: 'Are sibling discounts or flexible installment plans available?',
+      answer:
+        'Yes. Families with two or more children enrolled at TNGS receive a 10% sibling tuition discount on subsequent children. Termly fees may also be paid in two structured installments upon arrangement with the Bursar.',
+    },
+    {
+      question: 'What are the school hours and aftercare options?',
+      answer:
+        'Regular school hours run from 8:00 AM to 3:15 PM (Monday to Friday), with Early Years dismissal at 1:30 PM or optional supervised enrichment until 3:30 PM.',
+    },
+    {
+      question: 'What documents are required when applying?',
+      answer:
+        'You will need a copy of your child’s birth certificate, immunization card, two passport-size photographs, and the most recent school report (for Primary 1 to Primary 6 applicants).',
+    },
+  ],
+  keyDates: [
+    { date: 'December 5, 2026', event: 'Early Years & Primary Open House (9:00 AM – 12:00 PM)' },
+    { date: 'January 15, 2027', event: 'Priority Application Deadline for Term I 2027 Intake' },
+    { date: 'January 29, 2027', event: 'New Family Orientation & Classroom Meet-and-Greet' },
+    { date: 'February 1, 2027', event: 'First Day of Term I (2027 Academic Year)' },
+  ],
+};
+
+export const COMMUNITY_DATA = {
+  stories: [
+    {
+      id: 'story-1',
+      tag: 'Environmental Stewardship',
+      date: 'November 2026',
+      title: 'Primary 4 Learners Harvest Their First Organic Kitchen Garden Crop',
+      excerpt:
+        'After eight weeks of composting, soil testing, and daily watering, learners harvested spinach, tomatoes, and herbs for the school kitchen.',
+      image:
+        'https://images.unsplash.com/photo-1592150621744-aca64f48394a?auto=format&fit=crop&w=900&q=80',
+    },
+    {
+      id: 'story-2',
+      tag: 'Creative Arts',
+      date: 'October 2026',
+      title: 'Annual Cultural Heritage & Music Showcase Celebrates Uganda’s Diversity',
+      excerpt:
+        'Families gathered on the green lawn for traditional drumming, storytelling, poetry, and visual art exhibitions created by every class.',
+      image:
+        'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?auto=format&fit=crop&w=900&q=80',
+    },
+    {
+      id: 'story-3',
+      tag: 'STEM & Inquiry',
+      date: 'September 2026',
+      title: 'Young Inventors Present Solar & Water-Filtration Prototypes',
+      excerpt:
+        'Upper Primary learners tackled real community sustainability challenges during our termly Design Thinking Expo.',
+      image:
+        'https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=900&q=80',
+    },
+  ],
+  parentsAssociation: {
+    title: 'TNGS Parents’ Association (PA)',
+    description:
+      'At The North Green School, parents are active partners in every child’s education. Our Parents’ Association welcomes new families, organizes community events, and collaborates with school leadership on campus wellness initiatives.',
+    initiatives: [
+      'Termly Family Picnic & Community Tree-Planting Mornings',
+      'New Parent Buddy Program pairing incoming families with current TNGS parents',
+      'Career & Storytelling Guest Mornings in classrooms',
+    ],
+  },
+  upcomingEvents: [
+    {
+      day: '05',
+      month: 'DEC',
+      title: 'Campus Open Day & Guided Family Tours',
+      time: '9:00 AM – 12:00 PM',
+      location: 'TNGS Main Campus, Kampala',
+    },
+    {
+      day: '12',
+      month: 'DEC',
+      title: 'End-of-Year Learner Showcase & Carols on the Green',
+      time: '10:30 AM – 1:00 PM',
+      location: 'TNGS Amphitheatre Lawn',
+    },
+    {
+      day: '29',
+      month: 'JAN',
+      title: '2027 New Family Orientation Morning',
+      time: '9:30 AM – 11:30 AM',
+      location: 'Early Years & Primary Courtyards',
+    },
+  ],
+};
