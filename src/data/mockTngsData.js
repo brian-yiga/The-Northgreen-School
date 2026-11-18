@@ -20,6 +20,17 @@ import pillar1Img from '../assets/images/carousel/village6.webp';
 import pillar2Img from '../assets/images/carousel/village2.webp';
 import pillar3Img from '../assets/images/carousel/village10.webp';
 import pillar4Img from '../assets/images/carousel/village1.webp';
+import mosesKawuma from '../assets/images/village-section/moses-kawuma.png';
+import eleanorZakeNayego from '../assets/images/village-section/eleanor-zake-nayego.png';
+import elaineAlowoMatovu from '../assets/images/village-section/elaine-alowo-matovu.png';
+import playgroundImg from '../assets/images/our-campus/playground.jpg'
+import swimmingClubImg from '../assets/images/club-activities/swimming-club.webp';
+import rowingClubImg from '../assets/images/club-activities/rowing-club.webp';
+import soccerClubImg from '../assets/images/club-activities/soccer-club.webp';
+import chessClubImg from '../assets/images/club-activities/chess-club.webp';
+import earlyYearsImg from '../assets/images/club-activities/early-years.webp';
+import primaryImg from '../assets/images/club-activities/primary.webp';
+import secondaryImg from '../assets/images/club-activities/secondary.webp';
 
 export const PILLARS_DATA = [
   {
@@ -314,27 +325,27 @@ export const DISCOVER_DATA = {
     {
       title: 'Creative Arts & Play Grounds',
       description: 'Safe, green outdoor fields and dedicated studios for music, visual arts, and physical education.',
-      image: 'https://images.unsplash.com/photo-1564429238817-39f8928f7b78?auto=format&fit=crop&w=900&q=80',
+      image: playgroundImg,
     },
   ],
   leadership: [
     {
-      name: 'Grace Nakato',
-      role: 'Head of Academics',
-      bio: '14+ years leading primary curriculum innovation and inquiry-based teacher mentorship.',
-      image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80',
+      name: 'Moses Kawuma',
+      role: 'Head of Secondary & Academic Director',
+      bio: '14+ years leading curriculum innovation and inquiry-based teacher mentorship.',
+      image: mosesKawuma,
     },
     {
-      name: 'David Ssemwogerere',
-      role: 'Dean of Student Life & Co-Curriculars',
+      name: 'Eleanor Zake Nayego',
+      role: 'Head of Primary & Early Years Coordinator',
       bio: 'Passionate about athletics, student leadership, and holistic social-emotional growth.',
-      image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80',
+      image: eleanorZakeNayego,
     },
     {
-      name: 'Rebecca Namuli',
-      role: 'Early Years Coordinator',
-      bio: 'Specialist in foundational literacy, play-based learning, and smooth Kindergarten transitions.',
-      image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80',
+      name: 'Elaine Alowo-Matovu',
+      role: 'Resident Director & Founder',
+      bio: 'Specialist in foundational literacy, play-based learning, and smooth Kindergarten transition.',
+      image: elaineAlowoMatovu,
     },
   ],
 };
@@ -354,8 +365,7 @@ export const LEARNING_DATA = {
         'Low learner-to-educator ratios ensuring individualized warmth and care',
         'Smooth, joyful progression into Cambridge Primary Year 1',
       ],
-      image:
-        'https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=1000&q=80',
+      image: earlyYearsImg,
     },
     {
       id: 'primary',
@@ -370,9 +380,8 @@ export const LEARNING_DATA = {
         'Hands-on ecological investigations in our campus gardens and outdoor labs',
         'Cambridge Primary Checkpoint assessments in Year 6 to benchmark readiness for Secondary',
       ],
-      image:
-        'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1000&q=80',
-    },
+      image: primaryImg,
+      },
     {
       id: 'secondary',
       label: 'Secondary Section (Years 7 – 11)',
@@ -386,8 +395,7 @@ export const LEARNING_DATA = {
         'Applied STEM, coding, research seminars, and public speaking showcases',
         'Student leadership, community service, and holistic mentorship',
       ],
-      image:
-        'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=80',
+      image: secondaryImg,
     },
   ],
   coCurriculars: [
@@ -399,8 +407,7 @@ export const LEARNING_DATA = {
       description:
         'Our flagship aquatic program building water confidence, stroke technique, endurance, and competitive swimming readiness under certified swim coaches.',
       highlight: 'Off-site pool training, gala preparation & water safety',
-      image:
-        'https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=900&q=80',
+      image: swimmingClubImg,
       socials: {
         instagram: 'https://instagram.com',
         tiktok: 'https://tiktok.com',
@@ -414,8 +421,7 @@ export const LEARNING_DATA = {
       description:
         'Sharpening focus, pattern recognition, patience, and strategic foresight through structured chess coaching, peer matches, and inter-school tournaments.',
       highlight: 'Weekly tactical workshops & competitive tournament play',
-      image:
-        'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&fit=crop&w=900&q=80',
+      image: chessClubImg,
       socials: {
         instagram: 'https://instagram.com',
         tiktok: 'https://tiktok.com',
@@ -429,8 +435,7 @@ export const LEARNING_DATA = {
       description:
         'Developing agility, teamwork, discipline, and game intelligence on the pitch—culminating in spirited participation in the Surge Cup football showcase.',
       highlight: 'Skill drills, Surge Cup match days & sportsmanship',
-      image:
-        'https://images.unsplash.com/photo-1517466787929-bc90951d0974?auto=format&fit=crop&w=900&q=80',
+      image: soccerClubImg,
       socials: {
         instagram: 'https://instagram.com',
         tiktok: 'https://tiktok.com',
@@ -444,8 +449,7 @@ export const LEARNING_DATA = {
       description:
         'Introducing young learners to balance, core strength, synchronized teamwork, and respect for Uganda’s waterways through guided rowing sessions.',
       highlight: 'Off-site water sessions, balance & team coordination',
-      image:
-        'https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=80',
+      image: rowingClubImg,
       socials: {
         instagram: 'https://instagram.com',
         tiktok: 'https://tiktok.com',

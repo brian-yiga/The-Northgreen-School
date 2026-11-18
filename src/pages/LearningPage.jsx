@@ -40,9 +40,6 @@ export default function LearningPage({ onOpenInquiry }) {
       />
 
       {/* Interactive Grade-Level Stage Switcher */}
-      ...
-
-      {/* Interactive Grade-Level Stage Switcher */}
       <section
         id="stages"
         className="scroll-mt-28 py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto"
@@ -144,7 +141,6 @@ export default function LearningPage({ onOpenInquiry }) {
         </AnimatePresence>
       </section>
 
-      {/* Co-Curriculars & Enrichment (#co-curriculars) */}
       {/* Co-Curriculars & Enrichment (#co-curriculars) */}
       <section
         id="co-curriculars"

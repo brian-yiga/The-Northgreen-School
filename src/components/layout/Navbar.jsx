@@ -107,7 +107,7 @@ export default function Navbar({ onOpenInquiry }) {
                 <Link
                   to={baseRoute}
                   onClick={(e) => handleNavClick(e, baseRoute)}
-                  className={`group/nav flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all cursor-pointer ${
+                  className={`group/nav flex items-center gap-1.5 px-4 py-2 rounded-lg text-base font-medium transition-all cursor-pointer ${
                     isOpen
                       ? 'bg-tngs-green text-white shadow-xs'
                       : 'text-tngs-charcoal hover:bg-tngs-green hover:text-white'

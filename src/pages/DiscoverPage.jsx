@@ -13,6 +13,7 @@ import {
 // Import local image using correct assets path
 import discoverBg from '../assets/images/pages-hero-bg-images/discover-page.webp';
 
+
 const PRINCIPLE_ICONS = [Sparkles, Trees, HeartHandshake];
 
 export default function DiscoverPage({ onOpenInquiry }) {
@@ -26,11 +27,8 @@ export default function DiscoverPage({ onOpenInquiry }) {
         bgImage={discoverBg}
       />
       
-      {/* Rest of your DiscoverPage code... */}
-
-      
       {/* Section 1: Vision, Mission & Core Principles (#vision) */}
-      <section id="vision" className="scroll-mt-28 py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto">
+      <section id="vision" className="scroll-mt-10 py-8 px-4 sm:px-8 max-w-7xl mx-auto">
         <RevealOnScroll className="max-w-3xl mb-12">
           <span className="text-xs font-bold uppercase tracking-widest text-tngs-lightGreen">
             {DISCOVER_DATA.vision.eyebrow}
@@ -127,7 +125,7 @@ export default function DiscoverPage({ onOpenInquiry }) {
       </section>
 
       {/* Section 3: Our Green Campus (#campus) */}
-      <section id="campus" className="scroll-mt-28 py-16 sm:py-24 px-4 sm:px-8 max-w-7xl mx-auto">
+      <section id="campus" className="scroll mt-10 py-8 px-4 sm:px-8 max-w-7xl mx-auto">
         <RevealOnScroll className="max-w-2xl mb-12">
           <span className="text-xs font-bold uppercase tracking-widest text-tngs-lightGreen">
             Environment & Facilities
@@ -158,7 +156,7 @@ export default function DiscoverPage({ onOpenInquiry }) {
       {/* Section 4: Leadership & Faculty (#faculty) */}
       <section
         id="faculty"
-        className="scroll-mt-28 py-16 sm:py-24 bg-tngs-sand/70 border-t border-stone-200/70 px-4 sm:px-8"
+        className="scroll-mt-10 py-15 bg-tngs-sand/70 border-t border-stone-200/70 px-4 sm:px-8"
       >
         <div className="max-w-7xl mx-auto">
           <RevealOnScroll className="max-w-2xl mb-12">
