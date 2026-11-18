@@ -2,6 +2,136 @@ import heroBackgroundImage from '../assets/images/backgroundImage.jpeg';
 import graduationImage from '../assets/images/graduation.webp';
 import residentDirectorImage from '../assets/images/elaine-alowo-matovu.png';
 
+import village1 from '../assets/images/carousel/village1.webp';
+import village2 from '../assets/images/carousel/village2.webp';
+import village3 from '../assets/images/carousel/village3.webp';
+import village4 from '../assets/images/carousel/village4.webp';
+import village5 from '../assets/images/carousel/village5.webp';
+import village6 from '../assets/images/carousel/village6.webp';
+import village7 from '../assets/images/carousel/village7.webp';
+import village8 from '../assets/images/carousel/village8.webp';
+import village9 from '../assets/images/carousel/village9.webp';
+import village10 from '../assets/images/carousel/village10.webp';
+import village11 from '../assets/images/carousel/village11.webp';
+import village12 from '../assets/images/carousel/village12.webp';
+import village13 from '../assets/images/carousel/village13.webp';
+import village14 from '../assets/images/carousel/village14.webp';
+
+export const COMMUNITY_SPOTLIGHTS = [
+  {
+    id: 1,
+    name: 'Strategic Minds',
+    role: 'MindAkii Chess Club',
+    quote: 'Focus & Patience',
+    story: 'Students sharpening tactical thinking, concentration, and sportsmanship during our campus chess tournament sessions.',
+    image: village1,
+  },
+  {
+    id: 2,
+    name: 'Cultural Showcase',
+    role: 'Performing Arts',
+    quote: 'Our Roots, Our Pride',
+    story: 'Vibrant traditional performances celebrating our rich heritage with rhythm, color, and dynamic stage energy.',
+    image: village2,
+  },
+  {
+    id: 3,
+    name: 'Engaged Families',
+    role: 'Parent Community',
+    quote: 'The Village Spirit',
+    story: 'Parents and guardians actively participating and cheering on student milestones during school events.',
+    image: village3,
+  },
+  {
+    id: 4,
+    name: 'Musical Excellence',
+    role: 'Student Musician',
+    quote: 'Melodies & Purpose',
+    story: 'Unleashing creative expression through live instrumental performance and vocal arts on stage.',
+    image: village4,
+  },
+  {
+    id: 5,
+    name: 'Our Roots, Our Pride',
+    role: 'Campus Life',
+    quote: 'Identity & Values',
+    story: 'Embracing national pride and cultural grounding right at the heart of our learning environment.',
+    image: village5,
+  },
+  {
+    id: 6,
+    name: 'Class of Distinction',
+    role: 'Graduation Ceremony',
+    quote: 'Achievement Unlocked',
+    story: 'Celebrating our graduates in their ceremonial gowns, ready to step into the world with confidence.',
+    image: village6,
+  },
+  {
+    id: 7,
+    name: 'Bright Young Learners',
+    role: 'Primary & Early Years',
+    quote: 'Curious Minds',
+    story: 'Attentive young scholars engaged in collaborative learning and classroom activities.',
+    image: village7,
+  },
+  {
+    id: 8,
+    name: 'Soccer Vibes F.C.',
+    role: 'Akii Bua Sports Programme',
+    quote: 'Teamwork & Vigor',
+    story: 'Our football team on the pitch, displaying grit, collaboration, and competitive spirit.',
+    image: village8,
+  },
+  {
+    id: 9,
+    name: 'Simon Peter Kasagga',
+    role: 'Bless A Child Foundation',
+    quote: 'Community Partner',
+    story: 'Collaborative outreach initiatives instilling empathy and social responsibility in our students.',
+    image: village9,
+  },
+  {
+    id: 10,
+    name: 'Swimming Champion',
+    role: 'Aqua Akii Club',
+    quote: 'Victory & Discipline',
+    story: 'Celebrating excellence in the pool with medals and trophies from the Uganda Swimming Federation.',
+    image: village10,
+  },
+  {
+    id: 11,
+    name: 'Harmonious Voices',
+    role: 'School Choir',
+    quote: 'Joy in Song',
+    story: 'Students pouring their hearts into vocal performances, learning teamwork and harmony through music.',
+    image: village11,
+  },
+  {
+    id: 12,
+    name: 'Dedicated Faculty',
+    role: 'Educator Profile',
+    quote: 'Guiding Futures',
+    story: 'Passionate teaching professionals committed to individualized mentorship and student success.',
+    image: village12,
+  },
+  {
+    id: 13,
+    name: 'School Leadership',
+    role: 'Administration',
+    quote: 'Vision & Purpose',
+    story: 'Providing steady guidance and fostering an environment where young minds grow with confidence.',
+    image: village13,
+  },
+  {
+    id: 14,
+    name: 'Community Pillar',
+    role: 'Parent & Partner',
+    quote: 'Shared Commitment',
+    story: 'Working hand-in-hand with families to build a nurturing, future-ready learning community.',
+    image: village14,
+  },
+];
+
 
 export const NAVIGATION_DATA = [
   {
@@ -79,7 +209,7 @@ export const PILLARS_DATA = [
   {
     id: 'community',
     kicker: 'Our Hearts Together',
-    title: 'Village.',
+    title: 'Community.',
     description: 'Every child is known by name—supported by teachers and families working side by side.',
     image: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1000&q=80',
     accentColor: 'bg-tngs-charcoal',
@@ -121,41 +251,6 @@ export const NOTICES_DATA = [
     ctaText: 'Explore Admissions',
     actionType: 'link',
     path: '/admissions',
-  },
-];
-
-export const COMMUNITY_SPOTLIGHTS = [
-  {
-    id: 1,
-    name: 'Amina & David',
-    role: 'Primary 5 Learners',
-    quote: 'Beyond what’s possible',
-    story: 'Leading our campus biodiversity mapping project and presenting findings at the termly learner showcase.',
-    image: 'https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 2,
-    name: 'Sarah Namukasa',
-    role: 'Lower Primary Lead Educator',
-    quote: 'Confidence to succeed',
-    story: 'Creating calm, responsive classrooms where every learner’s curiosity shapes the daily inquiry.',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 3,
-    name: 'Joseph Kato',
-    role: 'Campus Grounds & Eco-Coordinator',
-    quote: 'Feeding curiosity',
-    story: 'Guiding learners as they cultivate organic vegetables from seed to harvest in our kitchen garden.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
-  },
-  {
-    id: 4,
-    name: 'Grace & Ethan',
-    role: 'Student Council Peacemakers',
-    quote: 'Creating new paths',
-    story: 'Championing peer mentorship, kindness initiatives, and welcoming new families to TNGS.',
-    image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80',
   },
 ];
 

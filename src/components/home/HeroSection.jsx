@@ -16,7 +16,7 @@ export default function HeroSection({ onOpenInquiry }) {
   }, []);
 
   return (
-    <section className="relative min-h-[85vh] sm:min-h-[88vh] flex items-end sm:items-center overflow-hidden bg-tngs-green">
+    <section className="relative sm:min-h-[50vh] min-h-[88vh] flex items-center sm:items-center overflow-hidden bg-tngs-green">
       {/* Layered Background with Slow Ken Burns Zoom */}
       <motion.div
         initial={{ scale: 1.12 }}
@@ -45,13 +45,13 @@ export default function HeroSection({ onOpenInquiry }) {
       </motion.div>
 
       {/* Hero Foreground Content */}
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-8 pt-24 pb-14 sm:py-24">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-8 pt-4 pb-12 sm:pt-6 sm:pb-16">
         <div className="max-w-2xl">
           <motion.span
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: EDITORIAL_EASE }}
-            className="inline-block text-xs sm:text-sm font-semibold uppercase tracking-widest text-tngs-mint bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full mb-5"
+            className="inline-block text-[11px] sm:text-sm font-semibold uppercase tracking-widest text-tngs-mint bg-white/10 backdrop-blur-md px-3 py-1 rounded-full mb-3.5"
           >
             {HERO_DATA.eyebrow}
           </motion.span>
@@ -60,10 +60,10 @@ export default function HeroSection({ onOpenInquiry }) {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, delay: 0.1, ease: EDITORIAL_EASE }}
-            className="font-serif text-3xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15] tracking-tight"
+            className="font-serif text-[36px] sm:text-[50px] lg:text-[60px] font-bold text-white leading-[1.12] tracking-tight"
           >
             {HERO_DATA.headlinePrefix}{' '}
-            <span className="block sm:inline-block min-h-[1.2em] text-tngs-mint">
+            <span className="block sm:inline-block min-h-[1.2em] text-[36px] sm:text-[50px] lg:text-[60px]">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={HERO_DATA.kineticWords[wordIndex]}
@@ -83,7 +83,7 @@ export default function HeroSection({ onOpenInquiry }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, delay: 0.25, ease: EDITORIAL_EASE }}
-            className="mt-5 text-base sm:text-lg text-stone-100/90 leading-relaxed max-w-xl"
+            className="mt-4 text-sm sm:text-lg text-stone-100/90 leading-relaxed max-w-xl"
           >
             {HERO_DATA.subheadline}
           </motion.p>
@@ -93,18 +93,18 @@ export default function HeroSection({ onOpenInquiry }) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.75, delay: 0.35, ease: EDITORIAL_EASE }}
-            className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5"
+            className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-stretch sm:items-center gap-3"
           >
             <button
               onClick={onOpenInquiry}
-              className="inline-flex items-center justify-center gap-2 bg-tngs-mint text-tngs-green hover:bg-white font-semibold text-sm sm:text-base px-6 py-3.5 rounded-full shadow-lg transition-all"
+              className="inline-flex items-center justify-center gap-2 bg-tngs-mint text-tngs-green hover:bg-white font-semibold text-sm px-6 py-3.5 rounded-full shadow-lg transition-all"
             >
               <Calendar size={18} />
               Book a Campus Visit
             </button>
             <Link
               to="/discover"
-              className="inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white border border-white/25 font-semibold text-sm sm:text-base px-6 py-3.5 rounded-full transition-all"
+              className="inline-flex items-center justify-center gap-2 bg-white/15 hover:bg-white/25 backdrop-blur-md text-white border border-white/25 font-semibold text-sm px-6 py-3.5 rounded-full transition-all"
             >
               Discover TNGS
               <ArrowRight size={18} />

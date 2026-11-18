@@ -14,7 +14,7 @@ export default function PillarsSection() {
           Our Educational Philosophy
         </span>
         <h2 className="mt-3 font-serif text-3xl sm:text-5xl font-bold text-tngs-green leading-tight">
-          Nature. Inquiry. Village.
+          Nature. Inquiry. Commmunity.
         </h2>
         <p className="mt-4 text-base sm:text-lg text-stone-600 leading-relaxed">
           Yes, we value who your child is today — and we nurture who they are becoming. Learning at TNGS extends beyond four walls into our gardens, community, and the wider world.
