@@ -16,6 +16,58 @@ import village11 from '../assets/images/carousel/village11.webp';
 import village12 from '../assets/images/carousel/village12.webp';
 import village13 from '../assets/images/carousel/village13.webp';
 import village14 from '../assets/images/carousel/village14.webp';
+import pillar1Img from '../assets/images/carousel/village6.webp';
+import pillar2Img from '../assets/images/carousel/village2.webp';
+import pillar3Img from '../assets/images/carousel/village10.webp';
+import pillar4Img from '../assets/images/carousel/village1.webp';
+
+export const PILLARS_DATA = [
+  {
+    id: 'pillar-1',
+    kicker: 'Global & Cultural',
+    accentColor: 'bg-tngs-green',
+    title: 'Cambridge Curriculum, Grounded Locally',
+    description:
+      'Students follow the globally respected Cambridge International pathway—enriched with Luganda fluency, cultural heritage, and real-world civic awareness so they thrive anywhere while staying rooted in who they are.',
+    ctaText: 'Explore Learning',
+    path: '/learning',
+    image: pillar1Img,
+  },
+  {
+    id: 'pillar-2',
+    kicker: 'Leadership & Life-Readiness',
+    accentColor: 'bg-amber-700',
+    title: 'Whole Child Formation: The True North Programme',
+    description:
+      'A faith-rooted leadership and life-readiness framework spanning seven core strands—from personal discipline and gratitude to AI literacy and service—shaping young people of strength, character, and vision.',
+    ctaText: 'Discover the Programme',
+    path: '/discover',
+    image: pillar2Img,
+  },
+  {
+    id: 'pillar-3',
+    kicker: 'Athletics & Resilience',
+    accentColor: 'bg-teal-700',
+    title: 'Sports Excellence: The Akii Bua Athletics Programme',
+    description:
+      'Through the Aqua Akii Swim Club and Akii Bua Sports Scholarships, learners train under accomplished mentors to build physical discipline, teamwork, and grit.',
+    ctaText: 'Explore Community & Sports',
+    path: '/community',
+    image: pillar3Img,
+  },
+  {
+    id: 'pillar-4',
+    kicker: 'Purpose & Scholarship',
+    accentColor: 'bg-tngs-lightGreen',
+    title: 'Academic Rigour with a Conscience',
+    description:
+      'Excellence goes beyond exam scores to purposeful character. Through initiatives like the Resident Director’s Scholarship Programme, we nurture disciplined, ambitious, and ethically grounded leaders.',
+    ctaText: 'Inquire About Admissions',
+    actionType: 'inquiry',
+    path: '/admissions',
+    image: pillar4Img,
+  },
+];
 
 export const COMMUNITY_SPOTLIGHTS = [
   {
@@ -188,33 +240,6 @@ export const HERO_DATA = {
   image: heroBackgroundImage,
   graduationImage: graduationImage,
 };
-
-export const PILLARS_DATA = [
-  {
-    id: 'nature',
-    kicker: 'Our Roots in the Land',
-    title: 'Nature.',
-    description: 'Our lush green campus serves as a living laboratory where students explore ecology and sustainability.',
-    image: 'https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1000&q=80',
-    accentColor: 'bg-tngs-green',
-  },
-  {
-    id: 'inquiry',
-    kicker: 'Our Eyes on the Future',
-    title: 'Inquiry.',
-    description: 'We nurture independent thinkers who ask bold questions and collaborate across disciplines.',
-    image: 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=1000&q=80',
-    accentColor: 'bg-tngs-lightGreen',
-  },
-  {
-    id: 'community',
-    kicker: 'Our Hearts Together',
-    title: 'Community.',
-    description: 'Every child is known by name—supported by teachers and families working side by side.',
-    image: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=1000&q=80',
-    accentColor: 'bg-tngs-charcoal',
-  },
-];
 
 export const RESIDENT_DIRECTOR_DATA = {
   sectionTitle: "Resident Director's Message",

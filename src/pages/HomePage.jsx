@@ -10,7 +10,7 @@ export default function HomePage({ onOpenInquiry }) {
     <div>
       <HeroSection onOpenInquiry={onOpenInquiry} />
       <NoticesStrip onOpenInquiry={onOpenInquiry} />
-      <PillarsSection />
+      <PillarsSection onOpenInquiry={onOpenInquiry} />
       <VillageCarousel onOpenInquiry={onOpenInquiry} />
       <TngsPromiseSection onOpenInquiry={onOpenInquiry} />
     </div>

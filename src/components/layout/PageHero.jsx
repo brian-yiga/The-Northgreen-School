@@ -4,9 +4,9 @@ import { RevealOnScroll } from '../motion/MotionPrimitives';
 export default function PageHero({ eyebrow, title, description, bgImage, children }) {
   return (
     <section className="relative overflow-hidden bg-tngs-green text-white py-14 sm:py-20 px-4 sm:px-8">
-      {/* Right-Aligned, Faint, Subtle Background Image */}
+      {/* Right-Aligned Background Image with Increased Visibility */}
       {bgImage && (
-        <div className="absolute inset-0 z-0 flex justify-end pointer-events-none opacity-20 sm:opacity-25">
+        <div className="absolute inset-0 z-0 flex justify-end pointer-events-none opacity-45 sm:opacity-60">
           <img
             src={bgImage}
             alt=""
@@ -15,8 +15,8 @@ export default function PageHero({ eyebrow, title, description, bgImage, childre
         </div>
       )}
 
-      {/* Gradient Overlay: Solid/Rich TNGS Green on the left fading to a soft dark gradient on the right */}
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-tngs-green via-tngs-green/90 to-tngs-green/50 pointer-events-none" />
+      {/* Gradient Overlay: Solid TNGS Green on the left for text legibility, fading to a light tint on the right */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-tngs-green via-tngs-green/85 to-tngs-green/20 pointer-events-none" />
 
       {/* Hero Content */}
       <div className="relative z-10 max-w-7xl mx-auto">
