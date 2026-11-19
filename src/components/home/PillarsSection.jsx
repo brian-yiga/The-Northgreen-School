@@ -1,25 +1,43 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
-import { PILLARS_DATA } from '../../data/mockTngsData';
-import { RevealOnScroll, StaggerContainer, StaggerItem, EDITORIAL_EASE } from '../motion/MotionPrimitives';
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { PILLARS_DATA } from "../../data/mockTngsData";
+import {
+  RevealOnScroll,
+  StaggerContainer,
+  StaggerItem,
+  EDITORIAL_EASE,
+} from "../motion/MotionPrimitives";
 
 export default function PillarsSection({ onOpenInquiry }) {
   return (
-    <section className="py-12 sm:py-16 px-4 sm:px-8 max-w-7xl mx-auto">
+    <section className="py-12 sm:py-16 px-4 sm:px-8 max-w-7xl mx-auto overflow-hidden">
       {/* Editorial Narrative Intro */}
-      <RevealOnScroll className="max-w-3xl mb-12 sm:mb-16">
-        <span className="text-xs font-bold uppercase tracking-widest text-tngs-lightGreen">
-          Our Educational Philosophy
-        </span>
-        <h2 className="mt-3 font-serif text-3xl sm:text-5xl font-bold text-tngs-green leading-tight">
-          Nature. Inquiry. Community.
-        </h2>
-        <p className="mt-4 text-base sm:text-lg text-stone-600 leading-relaxed">
-          Yes, we value who your child is today — and we nurture who they are becoming. Learning at TNGS extends beyond four walls into our gardens, community, and the wider world.
-        </p>
-      </RevealOnScroll>
+      {/* Editorial Narrative Intro */}
+      <div className="w-full mb-12 sm:mb-16">
+        <RevealOnScroll>
+          <span className="text-xs font-bold uppercase tracking-widest text-tngs-lightGreen">
+            Our Educational Philosophy
+          </span>
+        </RevealOnScroll>
+
+        <motion.h2
+          initial={{ opacity: 0, x: -48 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 1.15, ease: EDITORIAL_EASE }}
+          className="mt-3 font-serif text-2xl sm:text-4xl lg:text-[44px] xl:text-5xl font-bold text-tngs-green leading-tight uppercase tracking-tight lg:whitespace-nowrap"
+        >
+          ROOTED LOCALLY <span className="text-tngs-lightGreen">• READY GLOBALLY</span>
+        </motion.h2>
+
+        <RevealOnScroll delay={0.2}>
+          <p className="mt-4 max-w-3xl text-base sm:text-lg text-stone-600 leading-relaxed">
+            Yes, we value who your child is today — and we nurture who they are becoming. Learning at TNGS extends beyond four walls into our gardens, community, and the wider world.
+          </p>
+        </RevealOnScroll>
+      </div>
 
       {/* 2x2 Pillar Grid (Mobile 1 col -> Desktop 2 cols for all 4 Pillars) */}
       <StaggerContainer className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
@@ -56,7 +74,7 @@ export default function PillarsSection({ onOpenInquiry }) {
                 <div className="mt-6 pt-4 border-t border-stone-200/80 flex items-center justify-between text-sm font-semibold text-tngs-green">
                   <span>{pillar.ctaText}</span>
                   <span className="w-8 h-8 rounded-full bg-white flex items-center justify-center group-hover:bg-tngs-green group-hover:text-white transition-colors shadow-xs">
-                    <ArrowRight size="{15}"/>
+                    <ArrowRight size={15} />
                   </span>
                 </div>
               </div>
@@ -64,8 +82,8 @@ export default function PillarsSection({ onOpenInquiry }) {
           );
 
           return (
-            <StaggerItem key="{pillar.id}">
-              {pillar.actionType === 'inquiry' && onOpenInquiry ? (
+            <StaggerItem key={pillar.id}>
+              {pillar.actionType === "inquiry" && onOpenInquiry ? (
                 <button
                   type="button"
                   onClick={onOpenInquiry}
@@ -74,7 +92,10 @@ export default function PillarsSection({ onOpenInquiry }) {
                   {cardContent}
                 </button>
               ) : (
-                <Link className="group block h-full rounded-3xl overflow-hidden bg-tngs-sand border border-stone-200/70 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer" to="{pillar.path}">
+                <Link
+                  to={pillar.path}
+                  className="group block h-full rounded-3xl overflow-hidden bg-tngs-sand border border-stone-200/70 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col cursor-pointer"
+                >
                   {cardContent}
                 </Link>
               )}
